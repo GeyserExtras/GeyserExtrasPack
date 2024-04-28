@@ -1,0 +1,82 @@
+{
+  "format_version": "1.20.20",
+  "sound_definitions": {
+    "java.crit": {
+      "__use_legacy_max_distance": "true",
+      "category": "player",
+      "max_distance": null,
+      "min_distance": null,
+      "sounds": [
+        "sounds/entity/player/attack/crit1",
+        "sounds/entity/player/attack/crit2",
+        "sounds/entity/player/attack/crit3"
+      ]
+    },
+    "java.knockback": {
+      "__use_legacy_max_distance": "true",
+      "category": "player",
+      "max_distance": null,
+      "min_distance": null,
+      "sounds": [
+        "sounds/entity/player/attack/knockback1",
+        "sounds/entity/player/attack/knockback2",
+        "sounds/entity/player/attack/knockback3",
+        "sounds/entity/player/attack/knockback4"
+      ]
+    },
+    "java.strong": {
+      "__use_legacy_max_distance": "true",
+      "category": "player",
+      "max_distance": null,
+      "min_distance": null,
+      "sounds": [
+        "sounds/entity/player/attack/strong1",
+        "sounds/entity/player/attack/strong2",
+        "sounds/entity/player/attack/strong3",
+        "sounds/entity/player/attack/strong4",
+        "sounds/entity/player/attack/strong5",
+        "sounds/entity/player/attack/strong6"
+      ]
+    },
+    "java.sweep": {
+      "__use_legacy_max_distance": "true",
+      "category": "player",
+      "max_distance": null,
+      "min_distance": null,
+      "sounds": [
+        "sounds/entity/player/attack/sweep1",
+        "sounds/entity/player/attack/sweep2",
+        "sounds/entity/player/attack/sweep3",
+        "sounds/entity/player/attack/sweep4",
+        "sounds/entity/player/attack/sweep5",
+        "sounds/entity/player/attack/sweep6",
+        "sounds/entity/player/attack/sweep7"
+      ]
+    },
+    "java.weak": {
+      "__use_legacy_max_distance": "true",
+      "category": "player",
+      "max_distance": null,
+      "min_distance": null,
+      "sounds": [
+        "sounds/entity/player/attack/weak1",
+        "sounds/entity/player/attack/weak2",
+        "sounds/entity/player/attack/weak3",
+        "sounds/entity/player/attack/weak4"
+      ]
+    },
+    "plant.crop": {
+      "category": "block",
+      "max_distance": null,
+      "min_distance": null,
+      "sounds": [
+        "sounds/item/plant/crop1",
+        "sounds/item/plant/crop2",
+        "sounds/item/plant/crop3",
+        "sounds/item/plant/crop4",
+        "sounds/item/plant/crop5",
+        "sounds/item/plant/crop6"
+      ]
+    }
+  }
+}

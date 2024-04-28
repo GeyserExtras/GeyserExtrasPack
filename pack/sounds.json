@@ -1,0 +1,38 @@
+{
+  "block_sounds": {
+    "wheat": {
+      "events": {
+        "break": {
+          "pitch": [1.0, 1.2],
+          "sound": "dig.crop",
+          "volume": 1.0
+        },
+        "default": "",
+        "hit": {
+          "pitch": [1.0, 1.2],
+          "sound": "dig.crop",
+          "volume": 0.32
+        },
+        "item.use.on": {
+          "pitch": [1.0, 1.2],
+          "sound": "dig.crop"
+        },
+        "place": {
+          "pitch": [1.0, 1.2],
+          "sound": "dig.crop",
+          "volume": 0.7
+        },
+        "power.off": {
+          "pitch": [1.0, 1.2],
+          "sound": "block.click"
+        },
+        "power.on": {
+          "pitch": [1.0, 1.2],
+          "sound": "block.click"
+        }
+      },
+      "pitch" : 1.0,
+      "volume" : 1.0
+    }
+  },
+}

@@ -1,0 +1,10 @@
+{
+  "hud_title_text/subtitle_frame/subtitle": {
+    "offset": [-1, 19],
+    "shadow": false,
+    "font_size": "normal"
+  },
+  "hud_title_text/title_frame/title": {
+    "font_size": "large"
+  }
+}
