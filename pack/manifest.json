@@ -4,7 +4,7 @@
         "description": "Required Bedrock resource pack to extend GeyserExtras functionality",
         "name": "GeyserExtrasPack",
         "uuid": "aa3f4a8a-e506-4e2f-8dae-a851b0154394",
-        "version": [1, 0, 0],
+        "version": [1, 0, 1],
         "min_engine_version": [ 1, 16, 0 ]
     },
     "modules": [
@@ -12,7 +12,7 @@
             "description": "GeyserExtrasPack",
             "type": "resources",
             "uuid": "3ee0cb32-54c1-4b6e-8678-b568f536c2fc",
-            "version": [1, 0, 0]
+            "version": [1, 0, 1]
         }
     ]
 }

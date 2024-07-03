@@ -1,81 +1,141 @@
 {
   "format_version": "1.20.20",
   "sound_definitions": {
-    "java.crit": {
-      "__use_legacy_max_distance": "true",
+    "game.player.attack.nodamage": {
+      "__use_legacy_max_distance": true,
       "category": "player",
       "max_distance": null,
       "min_distance": null,
       "sounds": [
-        "sounds/entity/player/attack/crit1",
-        "sounds/entity/player/attack/crit2",
-        "sounds/entity/player/attack/crit3"
+        {
+          "name": "sounds/mob/player/attack/weak1",
+          "volume": 0.7
+        },
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/mob/player/attack/weak2",
+          "volume": 0.7
+        },
+        {
+          "name": "sounds/mob/player/attack/weak3",
+          "volume": 0.7
+        },
+        {
+          "name": "sounds/mob/player/attack/weak4",
+          "volume": 0.7
+        }
       ]
     },
-    "java.knockback": {
-      "__use_legacy_max_distance": "true",
+    "game.player.attack.strong": {
+      "__use_legacy_max_distance": true,
       "category": "player",
       "max_distance": null,
       "min_distance": null,
       "sounds": [
-        "sounds/entity/player/attack/knockback1",
-        "sounds/entity/player/attack/knockback2",
-        "sounds/entity/player/attack/knockback3",
-        "sounds/entity/player/attack/knockback4"
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/mob/player/attack/strong1",
+          "volume": 0.6
+        },
+        {
+          "name": "sounds/mob/player/attack/strong2",
+          "volume": 0.6
+        },
+        {
+          "name": "sounds/mob/player/attack/strong3",
+          "volume": 0.6
+        },
+        {
+          "name": "sounds/mob/player/attack/strong4",
+          "volume": 0.6
+        },
+        {
+          "name": "sounds/mob/player/attack/strong5",
+          "volume": 0.7
+        },
+        {
+          "name": "sounds/mob/player/attack/strong6",
+          "volume": 0.7
+        }
       ]
     },
-    "java.strong": {
-      "__use_legacy_max_distance": "true",
+    "geyserext.player.attack.crit": {
+      "__use_legacy_max_distance": true,
       "category": "player",
       "max_distance": null,
       "min_distance": null,
       "sounds": [
-        "sounds/entity/player/attack/strong1",
-        "sounds/entity/player/attack/strong2",
-        "sounds/entity/player/attack/strong3",
-        "sounds/entity/player/attack/strong4",
-        "sounds/entity/player/attack/strong5",
-        "sounds/entity/player/attack/strong6"
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/entity/player/attack/crit1",
+          "volume": 0.7
+        },
+        {
+          "name": "sounds/entity/player/attack/crit2",
+          "volume": 0.7
+        },
+        {
+          "name": "sounds/entity/player/attack/crit3",
+          "volume": 0.7
+        }
       ]
     },
-    "java.sweep": {
-      "__use_legacy_max_distance": "true",
+    "geyserext.player.attack.knockback": {
+      "__use_legacy_max_distance": true,
       "category": "player",
       "max_distance": null,
       "min_distance": null,
       "sounds": [
-        "sounds/entity/player/attack/sweep1",
-        "sounds/entity/player/attack/sweep2",
-        "sounds/entity/player/attack/sweep3",
-        "sounds/entity/player/attack/sweep4",
-        "sounds/entity/player/attack/sweep5",
-        "sounds/entity/player/attack/sweep6",
-        "sounds/entity/player/attack/sweep7"
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/entity/player/attack/knockback1",
+          "volume": 0.7
+        },
+        {
+          "name": "sounds/entity/player/attack/knockback2",
+          "volume": 0.7
+        },
+        {
+          "name": "sounds/entity/player/attack/knockback3",
+          "volume": 0.7
+        }
       ]
     },
-    "java.weak": {
-      "__use_legacy_max_distance": "true",
+    "geyserext.player.attack.sweep": {
+      "__use_legacy_max_distance": true,
       "category": "player",
       "max_distance": null,
       "min_distance": null,
       "sounds": [
-        "sounds/entity/player/attack/weak1",
-        "sounds/entity/player/attack/weak2",
-        "sounds/entity/player/attack/weak3",
-        "sounds/entity/player/attack/weak4"
-      ]
-    },
-    "plant.crop": {
-      "category": "block",
-      "max_distance": null,
-      "min_distance": null,
-      "sounds": [
-        "sounds/item/plant/crop1",
-        "sounds/item/plant/crop2",
-        "sounds/item/plant/crop3",
-        "sounds/item/plant/crop4",
-        "sounds/item/plant/crop5",
-        "sounds/item/plant/crop6"
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/entity/player/attack/sweep1",
+          "volume": 0.7
+        },
+        {
+          "name": "sounds/entity/player/attack/sweep2",
+          "volume": 0.7
+        },
+        {
+          "name": "sounds/entity/player/attack/sweep3",
+          "volume": 0.7
+        },
+        {
+          "name": "sounds/entity/player/attack/sweep4",
+          "volume": 0.7
+        },
+        {
+          "name": "sounds/entity/player/attack/sweep5",
+          "volume": 0.7
+        },
+        {
+          "name": "sounds/entity/player/attack/sweep6",
+          "volume": 0.7
+        },
+        {
+          "name": "sounds/entity/player/attack/sweep7",
+          "volume": 0.7
+        }
       ]
     }
   }
