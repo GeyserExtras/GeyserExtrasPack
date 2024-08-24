@@ -1,0 +1,18 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.player.first_person.swap_item": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"rightarm": {
+					"position": [
+						0.0,
+						"variable.is_using_vr != 1.0 ? -10.0 * (1.0 - variable.player_arm_height) : 0.0",
+						0.0
+					]
+				}
+			}
+		}
+	}
+}

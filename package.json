@@ -1,0 +1,13 @@
+{
+  "name": "geyserextraspack",
+  "version": "2.0.0",
+  "description": "",
+  "main": "build/UI.js",
+  "scripts": {},
+  "author": "LetsGoAway",
+  "license": "ISC",
+  "dependencies": {
+    "geyserextraspack": "file:",
+    "jsonui-scripting": "^2.0.2"
+  }
+}
