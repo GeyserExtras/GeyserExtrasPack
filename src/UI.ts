@@ -2,7 +2,7 @@ import { Modify, JsonUIElement, FontType, UI, ButtonMapping } from 'jsonui-scrip
 
 // Cooldown UI Changes
 Modify.HudScreen('hud_title_text/subtitle_frame/subtitle').setProperty({
-    offset: [-1, 19],
+    offset: [-1, 17],
     shadow: false,
     font_size: "normal"
 });
