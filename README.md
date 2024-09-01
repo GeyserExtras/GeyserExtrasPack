@@ -1,1 +1,1 @@
-# GeyserExtrasPack
+# GeyserExtrasPack 2.0
