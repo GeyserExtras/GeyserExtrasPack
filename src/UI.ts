@@ -2,16 +2,11 @@ import { Modify, JsonUIElement, FontType, UI, ButtonMapping } from 'jsonui-scrip
 
 // Cooldown UI Changes
 Modify.HudScreen('hud_title_text/subtitle_frame/subtitle').setProperty({
-    "hud_title_text/subtitle_frame/subtitle": {
-        offset: [-1, 19],
-        shadow: false,
-        font_size: "normal"
-    },
-    "hud_title_text/title_frame/title": {
-        font_size: "large"
-    }
-})
-
+    offset: [-1, 19],
+    shadow: false,
+    font_size: "normal"
+});
+Modify.HudScreen('hud_title_text/title_frame/title').setProperty({ font_size: "large" });
 // Gamemode Switcher style Emote UI
 Modify.PersonaCommon('emote_selection_wheel/default_state').setProperty({ texture: "textures/ui/gamemode_switcher_base", size: ["100%", "100%"] })
 Modify.PersonaCommon('emote_wheel_slot_content/image_0').setProperty({ size: ["100%", "100%"] })
