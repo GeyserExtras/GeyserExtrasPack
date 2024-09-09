@@ -1,4 +1,5 @@
-import { Modify, JsonUIElement, FontType, UI, ButtonMapping } from 'jsonui-scripting';
+import { Modify, JsonUIElement, FontType, UI, ButtonMapping, BindingInterface } from 'jsonui-scripting';
+
 
 // Cooldown UI Changes
 Modify.HudScreen('hud_title_text/subtitle_frame/subtitle').setProperty({
@@ -7,7 +8,10 @@ Modify.HudScreen('hud_title_text/subtitle_frame/subtitle').setProperty({
     font_size: "normal"
 });
 Modify.HudScreen('hud_title_text/title_frame/title').setProperty({ font_size: "large" });
+
 // Gamemode Switcher style Emote UI
+// Not going to keep for now due to issues with mouse and touchscreen, should revisit in the future.
+/*
 Modify.PersonaCommon('emote_selection_wheel/default_state').setProperty({ texture: "textures/ui/gamemode_switcher_base", size: ["100%", "100%"] })
 Modify.PersonaCommon('emote_wheel_slot_content/image_0').setProperty({ size: ["100%", "100%"] })
 Modify.PersonaCommon('emote_image/empty').setProperty({ size: ["18.85px", "18.85px"] })
@@ -82,5 +86,6 @@ const emoteText = JsonUIElement.extendOf(UI.PersonaCommon.EmoteLabel, {
             binding_name_override: "#visible"
         }
     ]
-
 });
+
+*/

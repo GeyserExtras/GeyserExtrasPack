@@ -1,0 +1,194 @@
+{
+  "namespace": "server_form",
+  "$schema": "https://kalmemarq.github.io/Bugrock-JSON-UI-Schemas/ui.schema.json",
+  "default_context_menu@common_dialogs.main_panel_no_buttons": {
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "$title_panel": "common_dialogs.standard_title_label",
+    "$title_size": ["100% - 14px", 10],
+    "size": [225, 200],
+    "$text_name": "#title_text",
+    "$title_text_binding_type": "none",
+    "$child_control": "server_form.long_form_panel",
+    "layer": 2,
+    "bindings": [
+      {
+        "binding_name": "#title_text"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "((#title_text - 'geyserextras:') = #title_text)",
+        "target_property_name": "#visible"
+      }
+    ]
+  },
+  "long_form": {
+    "type": "panel",
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "size": ["100%", "100%"],
+    "controls": [
+      {
+        "default_context_menu@server_form.default_context_menu": {}
+      },
+      {
+        "ge_playerlist@server_form.ge_playerlist": {
+          "bindings": [
+            {
+              "binding_name": "#title_text"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(#title_text = 'geyserextras:playerlist')",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  //==========================
+  // GeyserExtras Player List
+  //==========================
+
+  "ge_playerlist": {
+    "type": "stack_panel",
+    "size": [400, 240],
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "orientation": "vertical",
+    "layer": 1,
+    "controls": [
+      {
+        "scrolling_panel@common.scrolling_panel": {
+          "$show_background": true,
+          "$scroll_background_image_control": "server_form.menu_list_background",
+          "size": [400, 240],
+          "$scrolling_content": "server_form.ge_playerlist_content",
+          "$scroll_size": [5, "100% - 4px"],
+          "$scrolling_pane_size": ["100%", "100%"],
+          "$scrolling_pane_offset": [0, 0],
+          "$scroll_bar_right_padding_size": [0, 0],
+          "$scroll_bar_left_padding_size": [ 0, 0 ]
+        }
+      }
+    ]
+  },
+
+  "menu_list_background": {
+    "type": "image",
+    "texture": "textures/ui/menu_list_background",
+    "size": ["100%", 16],
+    "tiled": "x",
+    "layer": 1
+  },
+
+  "ge_playerlist_content@server_form.long_form_dynamic_buttons_panel": {
+    "type": "grid",
+    "offset": [0,0],
+    "grid_dimensions": [3, 3],
+    "grid_item_template": "server_form.ge_playerlist_buttons",
+    "grid_fill_direction": "horizontal",
+    "grid_rescaling_type": "horizontal",
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "factory": {
+      "name": "buttons",
+      "control_name": "server_form.ge_playerlist_buttons"
+    },
+    "collection_name": "form_buttons",
+    "bindings": [
+      {
+        "binding_name": "#form_button_length",
+        "binding_name_override": "#maximum_grid_items"
+      }
+    ]
+  },
+  "ge_playerlist_buttons": {
+    "type": "stack_panel",
+    "size": [128, 8],
+   // "min_size": [64, 8],
+    "orientation": "horizontal",
+    "controls": [
+      {
+        "panel_name": {
+          "type": "panel",
+          "size": [8, 8],
+          "offset": [0, 1],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "image",
+              "resolve_sibling_scope": true,
+              "source_property_name": "(not (#texture = ''))",
+              "target_property_name": "#visible"
+            }
+          ],
+          "controls": [
+            {
+              "image": {
+                "type": "image",
+                "layer": 3,
+                "size": [8, 8],
+                "bindings": [
+                  {
+                    "binding_name": "#form_button_texture",
+                    "binding_name_override": "#texture",
+                    "binding_type": "collection",
+                    "binding_collection_name": "form_buttons"
+                  },
+                  {
+                    "binding_name": "#form_button_texture_file_system",
+                    "binding_name_override": "#texture_file_system",
+                    "binding_type": "collection",
+                    "binding_collection_name": "form_buttons"
+                  },
+                  {
+                    "binding_type": "view",
+                    "source_property_name": "(not ((#texture = '') or (#texture = 'loading')))",
+                    "target_property_name": "#visible"
+                  }
+                ]
+              }
+            },
+            {
+              "progress@progress.progress_loading_bars": {
+                "layer": 2,
+                "size": [8, 8],
+                "bindings": [
+                  {
+                    "binding_type": "view",
+                    "source_control_name": "image",
+                    "resolve_sibling_scope": true,
+                    "source_property_name": "(#texture = 'loading')",
+                    "target_property_name": "#visible"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "player_name": {
+          "type": "label",
+          "localize": false,
+          "text_alignment": "right",
+          "text": "#form_button_text",
+          "shadow": true,
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "layer": 4,
+          "size": ["default", "default"],
+          "bindings": [
+            {
+              "binding_type": "collection",
+              "binding_name": "#form_button_text",
+              "binding_collection_name": "form_buttons"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
